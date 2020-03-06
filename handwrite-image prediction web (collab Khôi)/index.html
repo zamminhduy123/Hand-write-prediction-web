@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Dinosaur</title>
+    <link rel = "stylesheet" href = "./resources/css/myCSS.css">
+</head>
+<body>
+    <!--Nav bar-->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a class ="blue" href = "javascript:history.go(0)">Dinosaur</a>
+            </li>
+            <li><a href = "#top-section">Dino Rotation Station</a></li>
+            <li><a href = "#middle-section">Hide And Go Dino</a></li>
+            <li><a href = "#bottom-section">Tweet Section</a></li>
+        </ul>
+    </nav>
+    <!---Rotation Station-->
+    <div id = "top-section" class = "banner">
+        <h1>Dinosaur's Rotation Station</h1>
+        <img id = "dino-image" src = "./resources/images/unnamed.png" alt = "">
+        <hr>
+        <p class = "bold">It's time to have fun</p>
+        <hr>
+        <button id = "rotate-left-button" >Rotate Left</button>
+        <button id = "rotate-right-button">Rotate Right</button>
+    </div>
+    <!--Hide and Go Station-->
+    <div id = "middle-section" class = "HAG">
+        <h1>Hide And Go Station</h1>
+        <p>A combination of event listeners and event handlers gives you the ability to define how a site should react to a user's action.</p>
+        <p>For instance, you can trigger an event when a user hovers over an element on your site.</p>
+        <em>You're not limited to mouse events, you can also define key events when user interacts with their keyboard</em>
+        <hr>
+        <div class = "border" id = "dino-image-border">
+            <img id = "dino-image2" src = "./resources/images/unnamed.png" alt ="" >
+        </div>
+    </div>
+    <!--Tweet section-->
+    <div id = "bottom-section" class = "dino-section">
+        <span id = "dino" class = "bold">Dinosaur</span>
+        <p>Social media of this little Dinosaur</p>
+        <form action = "" id = "tweet-form">
+            <input type = "text" name = "tweet">
+            <input type = "submit" value = "Submit">
+        </form>
+        <div id = "tweets">
+            <ul>
+                <li>
+                    <div class = "avatar">
+
+                    </div>
+                    <span>Hi there!!! It's me again!!!</span>
+                </li>
+                <li>
+                    <div class = "avatar">
+
+                    </div>
+                    <span>Hi there!!! It's me again!!!</span>
+                </li>
+                <li>
+                    <div class = "avatar">
+
+                    </div>
+                    <span>Hi there!!! It's me again!!!</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./myJs.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #424874;
+    padding: 20px;
+}
+
+.image-place{
+  display: inline-block;
+  position: relative;
+}
+#user-image{
+  width: 600px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.border {
+  width: 600px;
+  height: 400px;
+  border: 1px #424874;
+  border-width: thick;
+  border-radius: 2%;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.result-return{
+  height: 50%;
+  text-align: center;
+  text-shadow: slateblue;
+ 
+  padding-top: 5px;
+  margin: 5px;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+#upload-button{
+  color: #f4eeff;
+  background-color: #424874;
+}
+
+#predict-button{
+  color: white;
+  background-color: #c02739;
+}
+
+#draw-button{
+  color: #f4eeff;
+  background-color: #424874;
+}
