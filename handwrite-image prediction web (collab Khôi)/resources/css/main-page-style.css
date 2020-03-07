@@ -7,9 +7,30 @@ h1 {
     padding: 20px;
 }
 
+#result {
+  border: 1px #424874;
+  border-width: thick;
+  border-radius: 2%;
+}
+
+
+
 .image-place{
   display: inline-block;
   position: relative;
+}
+
+#drawing-direction{
+  padding-left: 180px;
+}
+
+#drawing-board{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 #user-image{
   width: 600px;
@@ -22,6 +43,8 @@ h1 {
   bottom: 0;
 }
 
+
+
 .border {
   width: 600px;
   height: 400px;
@@ -32,11 +55,15 @@ h1 {
   margin-left: 15px;
 }
 
+
+
+#drawing-board {
+  border: 1px black;
+}
+
 .result-return{
   height: 50%;
   text-align: center;
-  text-shadow: slateblue;
- 
   padding-top: 5px;
   margin: 5px;
 }
