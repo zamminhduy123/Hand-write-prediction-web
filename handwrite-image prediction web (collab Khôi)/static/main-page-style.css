@@ -119,8 +119,6 @@ body {
 }
 
 #user-image{
-  width: 600px;
-  height: auto;
   margin: auto;
   position: absolute;
   top:0;

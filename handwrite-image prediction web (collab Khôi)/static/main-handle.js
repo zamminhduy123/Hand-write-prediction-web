@@ -18,21 +18,25 @@ function handleFiles(files) {
             const context = canvas.getContext('2d')
             //resize image if bigger than image-holder
             var MAX_WIDTH = 600;
-            var MAX_HEIGHT = 600;
+            var MAX_HEIGHT = 400;
             var width = userImg.width;
             var height = userImg.height;
         
-            if (width > height) {
-                if (width > MAX_WIDTH) {
+            if (width == height){
+                width = MAX_HEIGHT;
+                height = MAX_HEIGHT;
+            } else {
+            if (width > MAX_WIDTH) {
                     height *= MAX_WIDTH / width;
                     width = MAX_WIDTH;
                 }
-            } else {
-                if (height > MAX_HEIGHT) {
+            if (height > MAX_HEIGHT) {
                     width *= MAX_HEIGHT / height;
                     height = MAX_HEIGHT;
                 }
             }
+            userImg.width = width;
+            userImg.height = height;
             canvas.width = width;
             canvas.height = height;
             //push the canvas back to image
@@ -66,7 +70,6 @@ uploadButton.addEventListener("click", () => {
 //change the files
 realFileButton.addEventListener('change',function(e){
     handleFiles(realFileButton.files);
-    document.getElementById("input-file").value = "";
 },false)
 
 document.addEventListener('dragover',function(e){
@@ -99,7 +102,7 @@ drawButton.addEventListener('click', () => {
     drawingSec.hidden = false;
     userImg.hidden = true;
     userImg.src = '#';
-
+    document.getElementById("input-file").value = "";
     const ctx = cvDrawingBoard.getContext('2d');
     cvDrawingBoard.height = 300;
     cvDrawingBoard.width = 300;
